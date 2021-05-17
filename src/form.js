@@ -20,13 +20,9 @@ function Form() {
         let formData = new FormData();
 
         formData.append("action","send_data");
-        formData.append("id", 1); // число 123456 немедленно преобразуется в строку "123456"
-
-        // Файл, выбранный пользователем
+        formData.append("id", 1);
         formData.append("image", refImg.current.files[0]);
         formData.append("contact", `[${refTexts.map(el=>el.current.value).toString()}]`);
-
-        console.log(formData);
 
         fetch('https://test-job.pixli.app/send.php', {
             method: 'POST',
