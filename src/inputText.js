@@ -10,7 +10,7 @@ const InputText = React.forwardRef((props, ref) => {
     return (
         <label>
             {props.label}
-            <input type="text" value={value} onChange={handleChange.bind(this)} ref={ref} />
+            <input type="text" value={value} onChange={handleChange} ref={ref} />
         </label>
     );
 })
