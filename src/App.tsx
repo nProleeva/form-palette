@@ -1,6 +1,6 @@
 import React from "react";
 import Form from './form';
-import Palette from "./providerPalette";
+import Palette from "./palette";
 
 import './App.scss';
 import {
