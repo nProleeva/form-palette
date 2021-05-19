@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "https://nproleeva.github.io/form-palette/static/css/main.3362cad2.chunk.css",
-    "main.js": "https://nproleeva.github.io/form-palette/static/js/main.7ae1767a.chunk.js",
-    "main.js.map": "https://nproleeva.github.io/form-palette/static/js/main.7ae1767a.chunk.js.map",
-    "runtime-main.js": "https://nproleeva.github.io/form-palette/static/js/runtime-main.9bb7a452.js",
-    "runtime-main.js.map": "https://nproleeva.github.io/form-palette/static/js/runtime-main.9bb7a452.js.map",
-    "static/js/2.26a04495.chunk.js": "https://nproleeva.github.io/form-palette/static/js/2.26a04495.chunk.js",
-    "static/js/2.26a04495.chunk.js.map": "https://nproleeva.github.io/form-palette/static/js/2.26a04495.chunk.js.map",
-    "index.html": "https://nproleeva.github.io/form-palette/index.html",
-    "static/css/main.3362cad2.chunk.css.map": "https://nproleeva.github.io/form-palette/static/css/main.3362cad2.chunk.css.map",
-    "static/js/2.26a04495.chunk.js.LICENSE.txt": "https://nproleeva.github.io/form-palette/static/js/2.26a04495.chunk.js.LICENSE.txt",
-    "static/media/photo_camera_black_24dp.bd58cbc5.svg": "https://nproleeva.github.io/form-palette/static/media/photo_camera_black_24dp.bd58cbc5.svg"
+    "main.css": "/form-palette/static/css/main.3362cad2.chunk.css",
+    "main.js": "/form-palette/static/js/main.42596dc2.chunk.js",
+    "main.js.map": "/form-palette/static/js/main.42596dc2.chunk.js.map",
+    "runtime-main.js": "/form-palette/static/js/runtime-main.e181cfcc.js",
+    "runtime-main.js.map": "/form-palette/static/js/runtime-main.e181cfcc.js.map",
+    "static/js/2.158d13d9.chunk.js": "/form-palette/static/js/2.158d13d9.chunk.js",
+    "static/js/2.158d13d9.chunk.js.map": "/form-palette/static/js/2.158d13d9.chunk.js.map",
+    "index.html": "/form-palette/index.html",
+    "static/css/main.3362cad2.chunk.css.map": "/form-palette/static/css/main.3362cad2.chunk.css.map",
+    "static/js/2.158d13d9.chunk.js.LICENSE.txt": "/form-palette/static/js/2.158d13d9.chunk.js.LICENSE.txt",
+    "static/media/photo_camera_black_24dp.bd58cbc5.svg": "/form-palette/static/media/photo_camera_black_24dp.bd58cbc5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9bb7a452.js",
-    "static/js/2.26a04495.chunk.js",
+    "static/js/runtime-main.e181cfcc.js",
+    "static/js/2.158d13d9.chunk.js",
     "static/css/main.3362cad2.chunk.css",
-    "static/js/main.7ae1767a.chunk.js"
+    "static/js/main.42596dc2.chunk.js"
   ]
 }
