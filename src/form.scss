@@ -21,6 +21,8 @@ textarea {
         transition: border-color,border-style 0.5s ease-in-out;
         cursor: pointer;
         margin: 0.5rem 0 1rem;
+        position: relative;
+        overflow: hidden;
         .material-icons {
             display:block;
             width:42px;
@@ -37,8 +39,18 @@ textarea {
                 color: #000
             }
         }
+        .title {
+            z-index: 1;
+        }
+        img {
+            z-index: 0;
+            position: absolute;
+            left:0;
+            right:0;
+        }
     }
     input[type=file]{
         display: none;
     }
+    
 }

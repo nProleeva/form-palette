@@ -6,6 +6,7 @@ type typeDrag = 'dragenter'|'dragover'|'dragleave';
 const InputImg = React.forwardRef<HTMLInputElement>((props:{}, inputFile:ForwardedRef<HTMLInputElement>) => {
 
     const dropArea = useRef<HTMLDivElement>(null);
+    const refImg = useRef<HTMLImageElement>(null);
     const [fileName, setFileName] = useState<string>();
 
     useEffect(()=>{
@@ -27,9 +28,10 @@ const InputImg = React.forwardRef<HTMLInputElement>((props:{}, inputFile:Forward
 
     function handleDrop(ev:React.DragEvent<HTMLDivElement>):void {
         let files:FileList = ev.dataTransfer.files;
-        setFileName(files[0].name);
         if (typeof inputFile === 'object' && inputFile?.current) {
+            setFileName(files[0].name);
             inputFile.current.files = files;
+            addImage(files[0]);
         }
         ev.preventDefault();
         ev.stopPropagation();
@@ -38,7 +40,18 @@ const InputImg = React.forwardRef<HTMLInputElement>((props:{}, inputFile:Forward
     function handleChange():void {
         if (typeof inputFile === 'object' && inputFile?.current) {
             setFileName((inputFile.current.files as FileList)[0].name);
+            addImage((inputFile.current.files as FileList)[0]);
         }
+    }
+
+    function addImage(file:File):void {
+        let reader = new FileReader();
+        reader.onload = function() {
+            if (typeof refImg === 'object' && refImg?.current && typeof reader.result === 'string') {
+                refImg.current.src = reader.result;
+            }
+        };
+        reader.readAsDataURL(file);
     }
     function preventDefaults(e:DragEvent):void {
         e.preventDefault();
@@ -52,6 +65,7 @@ const InputImg = React.forwardRef<HTMLInputElement>((props:{}, inputFile:Forward
                 <i className="material-icons"><Svg>photo_camera</Svg></i>
                 <span className="title">{fileName?fileName:"Добавить файл"}</span>
                 <input type="file" accept="image/*" ref={inputFile} onChange={handleChange} required/>
+                <img ref={refImg}/>
             </label>
         </div>
     );
