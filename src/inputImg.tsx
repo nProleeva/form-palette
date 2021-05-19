@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef, ForwardedRef} from "react";
 import { ReactComponent as Svg } from "./photo_camera_black_24dp.svg";
 
-type typeDrag = 'dragenter'|'dragover'|'dragleave'|'drop';
+type typeDrag = 'dragenter'|'dragover'|'dragleave';
 
 const InputImg = React.forwardRef<HTMLInputElement>((props:{}, inputFile:ForwardedRef<HTMLInputElement>) => {
 
@@ -9,7 +9,7 @@ const InputImg = React.forwardRef<HTMLInputElement>((props:{}, inputFile:Forward
     const [fileName, setFileName] = useState<string>();
 
     useEffect(()=>{
-        let arrayType:Array<typeDrag> = ['dragenter','dragover','dragleave','drop']
+        let arrayType:Array<typeDrag> = ['dragenter','dragover','dragleave']
         if(dropArea.current) {
             arrayType.forEach((type:typeDrag)=>{
                 dropArea.current?.addEventListener(type,preventDefaults, false);
@@ -31,6 +31,8 @@ const InputImg = React.forwardRef<HTMLInputElement>((props:{}, inputFile:Forward
         if (typeof inputFile === 'object' && inputFile?.current) {
             inputFile.current.files = files;
         }
+        ev.preventDefault();
+        ev.stopPropagation();
     }
 
     function handleChange():void {
