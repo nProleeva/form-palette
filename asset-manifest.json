@@ -1,13 +1,8 @@
 {
   "files": {
     "main.css": "/form-palette/static/css/main.3362cad2.chunk.css",
-<<<<<<< HEAD
-    "main.js": "/form-palette/static/js/main.42596dc2.chunk.js",
-    "main.js.map": "/form-palette/static/js/main.42596dc2.chunk.js.map",
-=======
     "main.js": "/form-palette/static/js/main.f6c0749c.chunk.js",
     "main.js.map": "/form-palette/static/js/main.f6c0749c.chunk.js.map",
->>>>>>> 00800254123aac82ea6f1ccd0cc99ed23b20a806
     "runtime-main.js": "/form-palette/static/js/runtime-main.e181cfcc.js",
     "runtime-main.js.map": "/form-palette/static/js/runtime-main.e181cfcc.js.map",
     "static/js/2.158d13d9.chunk.js": "/form-palette/static/js/2.158d13d9.chunk.js",
@@ -21,10 +16,6 @@
     "static/js/runtime-main.e181cfcc.js",
     "static/js/2.158d13d9.chunk.js",
     "static/css/main.3362cad2.chunk.css",
-<<<<<<< HEAD
-    "static/js/main.42596dc2.chunk.js"
-=======
     "static/js/main.f6c0749c.chunk.js"
->>>>>>> 00800254123aac82ea6f1ccd0cc99ed23b20a806
   ]
 }
