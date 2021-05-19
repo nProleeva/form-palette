@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 
 import InputColor from "./inputColor";
 import { connect } from 'react-redux';
-import { createAction } from 'redux-actions'
 import './palette.scss';
 import {addColorAction} from "./redux/store";
 import type {infState,typeAddColor} from "./redux/store";
@@ -14,7 +13,7 @@ interface DispatchProps {
 type Props = DispatchProps & infState
 
 function Palette(props:Props) {
-    const [idNew, setIdNew] = useState(0);
+    const [idNew, setIdNew] = useState<number|null>(null);
 
     const clickAdd = () => {
         setIdNew(props.arrayColor.length);
