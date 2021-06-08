@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b86d05ab.chunk.css",
-    "main.js": "/static/js/main.b1e69236.chunk.js",
-    "main.js.map": "/static/js/main.b1e69236.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.38d8b23a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.38d8b23a.js.map",
-    "static/js/2.305a6d0f.chunk.js": "/static/js/2.305a6d0f.chunk.js",
-    "static/js/2.305a6d0f.chunk.js.map": "/static/js/2.305a6d0f.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.b86d05ab.chunk.css.map": "/static/css/main.b86d05ab.chunk.css.map",
-    "static/js/2.305a6d0f.chunk.js.LICENSE.txt": "/static/js/2.305a6d0f.chunk.js.LICENSE.txt",
-    "static/media/photo_camera_black_24dp.bd58cbc5.svg": "/static/media/photo_camera_black_24dp.bd58cbc5.svg"
+    "main.css": "/form-palette/static/css/main.b86d05ab.chunk.css",
+    "main.js": "/form-palette/static/js/main.e9205dc3.chunk.js",
+    "main.js.map": "/form-palette/static/js/main.e9205dc3.chunk.js.map",
+    "runtime-main.js": "/form-palette/static/js/runtime-main.e181cfcc.js",
+    "runtime-main.js.map": "/form-palette/static/js/runtime-main.e181cfcc.js.map",
+    "static/js/2.305a6d0f.chunk.js": "/form-palette/static/js/2.305a6d0f.chunk.js",
+    "static/js/2.305a6d0f.chunk.js.map": "/form-palette/static/js/2.305a6d0f.chunk.js.map",
+    "index.html": "/form-palette/index.html",
+    "static/css/main.b86d05ab.chunk.css.map": "/form-palette/static/css/main.b86d05ab.chunk.css.map",
+    "static/js/2.305a6d0f.chunk.js.LICENSE.txt": "/form-palette/static/js/2.305a6d0f.chunk.js.LICENSE.txt",
+    "static/media/photo_camera_black_24dp.bd58cbc5.svg": "/form-palette/static/media/photo_camera_black_24dp.bd58cbc5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.38d8b23a.js",
+    "static/js/runtime-main.e181cfcc.js",
     "static/js/2.305a6d0f.chunk.js",
     "static/css/main.b86d05ab.chunk.css",
-    "static/js/main.b1e69236.chunk.js"
+    "static/js/main.e9205dc3.chunk.js"
   ]
 }
