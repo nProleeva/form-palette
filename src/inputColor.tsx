@@ -1,17 +1,18 @@
 import React, {useState, useEffect, useRef} from 'react';
 import {connect} from "react-redux";
 import {updateColorAction, deleteColorAction} from "./redux/store";
-import type {typeUpdateColor, typeDeleteColor} from "./redux/store";
+import type {typeUpdateColor} from "./redux/store";
+import {Action} from "redux-actions";
 
 interface StateProps {
     color:string,
-    click?:boolean,
+    clickAdd?:boolean,
     id: number
 }
 
 interface DispatchProps {
-    updateColor:(id:number,color:string)=>typeUpdateColor,
-    deleteColor:(id:number)=>typeDeleteColor
+    updateColor:(id:number,color:string)=>Action<typeUpdateColor>,
+    deleteColor:(id:number)=>Action<number>
 }
 
 function InputColor(props:DispatchProps & StateProps){
@@ -27,11 +28,11 @@ function InputColor(props:DispatchProps & StateProps){
     },[props]);
 
     useEffect(()=>{
-        if(props.click) {
+        if(props.clickAdd) {
             refColor.current?.click();
             setIsOpen(true);
         }
-    },[props.click])
+    },[props.clickAdd])
 
     function handleChange(event:React.ChangeEvent<HTMLInputElement>):void {
         setColor( event.target.value);
@@ -40,7 +41,9 @@ function InputColor(props:DispatchProps & StateProps){
     }
     function clickDelete():void {
         props.deleteColor(props.id);
+        setIsOpen(false);
     }
+    //если открыт редактор и кликнули на область вне
     function handleMouseUp():void {
         if(isOpen) {
             refColor.current?.setAttribute('type','text');
