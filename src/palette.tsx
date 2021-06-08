@@ -30,11 +30,8 @@ function Palette(props:Props) {
     );
 }
 
-export default connect(((state:infState):infState =>{
-    console.log(state);
-    return {
+export default connect(((state:infState):infState =>({
         arrayColor:state.arrayColor
-    }
-}),{
+    })),{
     addColor: addColorAction
 })(Palette);
