@@ -7,12 +7,14 @@ import {
     BrowserRouter as Router,
     Switch,
     Route,
-    Link
+    Link,
+    HashRouter
 } from "react-router-dom";
 
 const App:React.FC<{}> = () => {
     return (
         <Router>
+        <HashRouter basename="/form-palette" hashType="noslash">
             <div>
                 <ul>
                     <li>
@@ -29,10 +31,11 @@ const App:React.FC<{}> = () => {
                         <Form />
                     </Route>
                     <Route path="/palette">
-                            <Palette />
+                        <Palette />
                     </Route>
                 </Switch>
             </div>
+        </HashRouter>
         </Router>
     );
 }
